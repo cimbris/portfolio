@@ -1,0 +1,18 @@
+.autor {
+    width: 448px;
+    
+
+    &__wrapper-title {
+        margin-bottom: 13px;
+    }
+    &__wrapper-subtitle {
+        margin-bottom: 14px;
+    }
+    &__description {
+        font-family: 'Inconsolata';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+        color: $textColor;
+    }
+}

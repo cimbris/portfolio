@@ -1,0 +1,20 @@
+.preview{
+    padding-top: 72.5px;
+    padding-bottom: 72.5px;
+
+    &__center{
+        display: flex;
+        column-gap: 137px;
+        align-items: center;
+
+        &>*{
+            flex-shrink: 0;
+        }
+    }
+    &__avatar{
+        position: relative;
+        width: 629px;
+        height: 575px;
+    }
+}
+

@@ -1,0 +1,70 @@
+.my-skills {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.my-skills__center {
+}
+
+.my-skills__card-row {
+    width: 1064px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 16px;
+}
+.skill-card {
+    padding-top: 61px;
+    padding-bottom: 58px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cardColor;
+    border-radius: 10px;
+    row-gap: 10px;
+
+    &:hover{
+        .skill-card__item--html{
+            fill: #FC490B;
+        }
+        .skill-card__item--css{
+            fill: #2196F4;
+        }
+        .skill-card__item--js{
+            fill: #FFDF00;
+        }
+        .skill-card__item--scss{
+            fill: #CA669B;
+        }
+        .skill-card__item--git{
+            fill: #F25234;
+        }
+        .context-btn{
+            // border-color: #2eaf84;
+            // transition: border-color 500ms;
+            transition: box-shadow 500ms;
+        }
+        .skill-card__item{
+            transition: fill 500ms;
+        }
+        .context-btn--html{
+            box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
+        }
+        .context-btn--css{
+            box-shadow: 0px 0px 4px 1px #2196F4, inset 0px 0px 1px 1px #2196F4;
+        }
+        .context-btn--js{
+            box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
+        }
+        .context-btn--scss{
+            box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
+        }
+        .context-btn--git{
+            box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
+        }
+
+    }
+}
+.skill-card__item{
+    transition: fill 500ms;
+
+}

@@ -1,0 +1,26 @@
+.header {
+    padding-top: 29.5px;
+    padding-bottom: 29.5px;
+}
+.header__center {
+    display: flex;
+    align-items: center;
+    column-gap: 530px;
+}
+// .header__menu {
+    
+// }
+.header__menu-link {
+    display: inline-block;
+    color: $textColor;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: capitalize;
+    
+    &:not(:last-child){
+        margin-right: 60px;
+    }
+}
