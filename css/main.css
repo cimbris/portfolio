@@ -341,13 +341,21 @@ legend {
 }
 
 .my-skills__card-row {
-  width: 1064px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 16px;
           column-gap: 16px;
+}
+@media (max-width: 1245px) {
+  .my-skills__card-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 16px;
+  }
 }
 
 .skill-card {
@@ -598,6 +606,14 @@ legend {
   transition: box-shadow 500ms;
   transition: box-shadow 500ms, -webkit-box-shadow 500ms;
   cursor: pointer;
+}
+@media (max-width: 1245px) {
+  .context-btn {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.06;
+  }
 }
 
 .project-card {

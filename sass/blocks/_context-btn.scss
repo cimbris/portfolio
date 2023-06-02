@@ -11,5 +11,12 @@
     color: inherit;
     transition: box-shadow 500ms;
     cursor: pointer;
+
+    @media (max-width: 1245px) {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.06;
+    }
 }
 
