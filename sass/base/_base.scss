@@ -78,13 +78,17 @@ border: none;
 /* Grid styles */
 
 .container {
-width: 1245px;
+max-width: 1245px;
+width: 100%;
 margin-right: auto;
 margin-left: auto;
 padding-left: 15px;
 padding-right: 15px;
-}
 
+    @media (max-width: 1245px) {
+    width: 662px;
+    }
+}
 /* Utility */
 
 .hidden {
@@ -96,3 +100,30 @@ display: none !important;
 .footer {
 margin-top: auto; /* sticky footer */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Tablet */
+// @media (max-width: 1199px) {
+//     width: 900px;
+//     }
+    
+//     /* Mobile */
+//     @media (max-width: 899px) {
+//     width: 768px;
+//     }
+    
+//     /* Mobile XS */
+//     @media (max-width: 767px) {
+//     width: 320px;
+//     }

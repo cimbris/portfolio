@@ -3,11 +3,16 @@
     padding-bottom: 64px;
 }
 .about-me__center{
-    width: 1037px;
-    margin: 0 auto;
+    // width: 1037px;
+    // margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 32px;
+
+    @media (max-width: 1245px) {
+            
+    }
 }
 .about-me__text{
     width: 904px;
@@ -15,6 +20,12 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1.04;
+
+    @media (max-width: 1245px) {
+            width: 451px;
+            font-size: 22px;
+            line-height: 1.16;
+    }
 }
 .about-me__icon{
     width: 101px;

@@ -85,14 +85,6 @@ legend {
 }
 
 /* Grid styles */
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 /* Utility */
 .hidden {
   display: none !important;
@@ -196,11 +188,17 @@ legend {
 
 /* Grid styles */
 .container {
-  width: 1245px;
+  max-width: 1245px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (max-width: 1245px) {
+  .container {
+    width: 662px;
+  }
 }
 
 /* Utility */
@@ -218,6 +216,12 @@ legend {
   padding-top: 29.5px;
   padding-bottom: 29.5px;
 }
+@media (max-width: 1245px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 .header__center {
   display: -webkit-box;
@@ -228,6 +232,15 @@ legend {
           align-items: center;
   -webkit-column-gap: 530px;
           column-gap: 530px;
+}
+@media (max-width: 1245px) {
+  .header__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
 }
 
 .header__menu-link {
@@ -262,10 +275,25 @@ legend {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media (max-width: 1245px) {
+  .preview__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 64px;
+  }
+}
 .preview__avatar {
   position: relative;
   width: 629px;
   height: 575px;
+}
+@media (max-width: 1245px) {
+  .preview {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .about-me {
@@ -274,17 +302,17 @@ legend {
 }
 
 .about-me__center {
-  width: 1037px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
 }
 
 .about-me__text {
@@ -293,6 +321,13 @@ legend {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.04;
+}
+@media (max-width: 1245px) {
+  .about-me__text {
+    width: 451px;
+    font-size: 22px;
+    line-height: 1.16;
+  }
 }
 
 .about-me__icon {

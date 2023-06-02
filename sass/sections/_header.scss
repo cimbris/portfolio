@@ -1,15 +1,22 @@
 .header {
     padding-top: 29.5px;
     padding-bottom: 29.5px;
+
+        @media (max-width: 1245px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
 }
 .header__center {
     display: flex;
     align-items: center;
     column-gap: 530px;
+
+    @media (max-width: 1245px) {
+    flex-direction: column;
+    row-gap: 24px;
+    }
 }
-// .header__menu {
-    
-// }
 .header__menu-link {
     display: inline-block;
     color: $textColor;

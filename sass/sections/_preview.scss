@@ -10,11 +10,23 @@
         &>*{
             flex-shrink: 0;
         }
+        
+        @media (max-width: 1245px) {
+            flex-direction: column;
+            row-gap: 64px;
+        }
     }
+
+
     &__avatar{
         position: relative;
         width: 629px;
         height: 575px;
     }
+
+    @media (max-width: 1245px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+        }
 }
 
