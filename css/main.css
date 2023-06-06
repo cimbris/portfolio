@@ -1,5 +1,6 @@
 /* Reset and base styles */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@700&display=swap");
+@import url(/fonts/ofont.ru_Impact.ttf);
 *,
 *::before,
 *::after {
@@ -360,7 +361,7 @@ legend {
 
 .skill-card {
   padding-top: 61px;
-  padding-bottom: 58px;
+  padding-bottom: 64px;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,9 +470,31 @@ legend {
   -webkit-column-gap: 64px;
           column-gap: 64px;
 }
+@media (max-width: 1245px) {
+  .footer__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 64px;
+  }
+  .footer__center .context-title {
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Impact', Impact;
+  }
+}
 
 .footer__copyright {
   width: 213px;
+}
+@media (max-width: 1245px) {
+  .footer__copyright {
+    width: 339px;
+  }
 }
 
 .footer__logo {
@@ -484,11 +507,15 @@ legend {
   font-size: 20px;
   line-height: 1.05;
   color: wheat;
-  height: 146px;
 }
 
 .footer__logo-svg {
   fill: #2eaf84;
+}
+@media (max-width: 1245px) {
+  .footer__logo-svg {
+    margin: 0 auto;
+  }
 }
 
 .footer__contacts {
