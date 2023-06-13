@@ -201,6 +201,11 @@ legend {
     width: 662px;
   }
 }
+@media (max-width: 661px) {
+  .container {
+    width: 413px;
+  }
+}
 
 /* Utility */
 .hidden {
@@ -221,6 +226,30 @@ legend {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+@media (max-width: 661px) {
+  .header {
+    padding-bottom: 26px;
+  }
+  .header .container {
+    display: none;
+  }
+  .header .header__mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .logo {
+    width: 180px;
   }
 }
 
@@ -258,9 +287,25 @@ legend {
   margin-right: 60px;
 }
 
+.header__mobile-menu {
+  display: none;
+}
+
 .preview {
   padding-top: 72.5px;
   padding-bottom: 72.5px;
+}
+@media (max-width: 1245px) {
+  .preview {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+@media (max-width: 661px) {
+  .preview {
+    padding-top: 141.5px;
+    padding-bottom: 141.5px;
+  }
 }
 .preview__center {
   display: -webkit-box;
@@ -283,6 +328,9 @@ legend {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .preview__avatar {
@@ -290,10 +338,12 @@ legend {
   width: 629px;
   height: 575px;
 }
-@media (max-width: 1245px) {
-  .preview {
-    padding-top: 128px;
-    padding-bottom: 128px;
+@media (max-width: 661px) {
+  .preview__avatar {
+    width: 413px;
+    height: 430px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -534,6 +584,12 @@ legend {
   width: 374px;
   height: 371px;
 }
+@media (max-width: 661px) {
+  .wrapper-avatar {
+    width: 278px;
+    height: 276px;
+  }
+}
 
 .shadow-one {
   width: 374px;
@@ -547,6 +603,12 @@ legend {
   z-index: 1;
   -webkit-transform: rotate(-24deg);
           transform: rotate(-24deg);
+}
+@media (max-width: 661px) {
+  .shadow-one {
+    width: 278px;
+    height: 276px;
+  }
 }
 
 .shadow-two {
@@ -562,6 +624,12 @@ legend {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
+@media (max-width: 661px) {
+  .shadow-two {
+    width: 278px;
+    height: 276px;
+  }
+}
 
 .avatar {
   width: 374px;
@@ -573,15 +641,27 @@ legend {
   border-radius: 28% 72% 72% 28%/49% 54% 46% 51%;
   z-index: 3;
 }
+@media (max-width: 661px) {
+  .avatar {
+    width: 278px;
+    height: 276px;
+  }
+}
 
 .autor {
   width: 448px;
 }
+@media (max-width: 661px) {
+  .autor {
+    width: 314px;
+    margin-left: 25px;
+  }
+}
 .autor__wrapper-title {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 .autor__wrapper-subtitle {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .autor__description {
   font-family: 'Inconsolata';
@@ -589,6 +669,14 @@ legend {
   font-size: 20px;
   line-height: 1;
   color: wheat;
+}
+@media (max-width: 661px) {
+  .autor__description {
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.04;
+  }
 }
 
 .title-head {
@@ -598,6 +686,14 @@ legend {
   line-height: 1.05;
   color: #2eaf84;
 }
+@media (max-width: 661px) {
+  .title-head {
+    font-family: 'Inconsolata';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.05;
+  }
+}
 
 .subtitle-head {
   font-family: 'Inconsolata';
@@ -605,6 +701,14 @@ legend {
   font-size: 40px;
   line-height: 1.05;
   color: wheat;
+}
+@media (max-width: 661px) {
+  .subtitle-head {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.06;
+  }
 }
 
 .wrapper-section-title {
@@ -787,6 +891,27 @@ legend {
 .social-link-img {
   height: 32px;
   width: 32px;
+}
+
+.burger {
+  width: 36px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burger__line {
+  width: 36px;
+  height: 4px;
+  background-color: wheat;
 }
 
 /*# sourceMappingURL=main.css.map */

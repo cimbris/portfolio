@@ -6,6 +6,24 @@
             padding-top: 16px;
             padding-bottom: 16px;
         }
+
+        @media (max-width: 661px) {
+            padding-bottom: 26px;
+            .container{
+                display: none;
+            }
+
+            .header__mobile-menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .logo{
+                width: 180px;
+            }
+        }
 }
 .header__center {
     display: flex;
@@ -30,4 +48,7 @@
     &:not(:last-child){
         margin-right: 60px;
     }
+}
+.header__mobile-menu{
+    display: none;
 }

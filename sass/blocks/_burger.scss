@@ -1,0 +1,12 @@
+.burger {
+    width: 36px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger__line {
+    width: 36px;
+    height: 4px;
+    background-color: $textColor;
+}
