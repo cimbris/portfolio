@@ -1,6 +1,11 @@
 .my-works{
     padding-top: 64px;
     padding-bottom: 64px;
+
+    // по макету должен быть 64
+    @media (max-width:661px) {
+        padding-top: 76px;
+    }
 }
 .my-works__center {
 }

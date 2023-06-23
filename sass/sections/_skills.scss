@@ -25,22 +25,63 @@
     background-color: $cardColor;
     border-radius: 10px;
     row-gap: 10px;
+    
+    @media (max-width: 661px) {
+        width: 285px;
+        flex-direction: row;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        column-gap: 30px;
+    }
+    &__icon svg{
+        @media (max-width: 661px) {
+            width: 28px;
+            height: 32px;
+        }
+    }
+
 
     &:hover{
         .skill-card__item--html{
             fill: #FC490B;
+
+            @media (max-width: 661px) {
+            width: 28px;
+            height: 32px;
+            }
         }
         .skill-card__item--css{
             fill: #2196F4;
+
+            @media (max-width: 661px) {
+                width: 28px;
+                height: 32px;
+                }
         }
         .skill-card__item--js{
             fill: #FFDF00;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
         }
         .skill-card__item--scss{
             fill: #CA669B;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
         }
         .skill-card__item--git{
             fill: #F25234;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
         }
         .context-btn{
             // border-color: #2eaf84;
@@ -65,7 +106,6 @@
         .context-btn--git{
             box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
         }
-
     }
 }
 .skill-card__item{

@@ -3,15 +3,14 @@
     padding-bottom: 64px;
 }
 .about-me__center{
-    // width: 1037px;
-    // margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 32px;
 
-    @media (max-width: 1245px) {
-            
+    @media (max-width: 661px) {
+            flex-direction: column;
+            row-gap: 32px;
     }
 }
 .about-me__text{
@@ -25,6 +24,11 @@
             width: 451px;
             font-size: 22px;
             line-height: 1.16;
+    }
+
+    @media (max-width: 661px) {
+            width: 322px;
+            font-weight: 500;
     }
 }
 .about-me__icon{

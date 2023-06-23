@@ -21,4 +21,7 @@
     line-height: 1.04;
     color: $titleColor !important;
     
+    @media (max-width:661px) {
+        min-width: 204px;
+    }
 }
