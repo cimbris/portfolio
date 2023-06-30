@@ -16,6 +16,7 @@ button {
 html {
   height: 100%;
   /* sticky footer */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -119,6 +120,7 @@ button {
 html {
   height: 100%;
   /* sticky footer */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -142,6 +144,10 @@ body > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   /* sticky footer */
+}
+
+body.active {
+  overflow: hidden;
 }
 
 input, textarea, button {
@@ -217,6 +223,22 @@ legend {
 .footer {
   margin-top: auto;
   /* sticky footer */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid #8f8d8d;
+  -webkit-text-fill-color: #161616;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .header {
@@ -1050,12 +1072,35 @@ legend {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .burger__line {
   width: 36px;
   height: 4px;
   background-color: wheat;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.burger.active {
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}
+.burger.active .burger__line--first {
+  -webkit-transform: rotate(45deg) translateY(14px);
+          transform: rotate(45deg) translateY(14px);
+}
+.burger.active .burger__line--second {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.burger.active .burger__line--third {
+  -webkit-transform: rotate(-45deg) translateY(-14px);
+          transform: rotate(-45deg) translateY(-14px);
 }
 
 /*# sourceMappingURL=main.css.map */
